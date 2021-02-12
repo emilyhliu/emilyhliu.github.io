@@ -52,3 +52,11 @@ h3 {
     margin-left: -40%;
     margin-bottom: 100%;
 }
+
+.paw{
+    width: 3%;
+    position: absolute;
+    display: block;
+    margin-left: 40%;
+    margin-top: -2%;
+}
