@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'geometry';
+    src: url('..\fonts\geometry-webfont.woff') format('woff2'),
+         url('..\fonts\geometry-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

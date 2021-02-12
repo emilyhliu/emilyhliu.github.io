@@ -1,0 +1,172 @@
+
+@font-face {
+    font-family: 'geometry';
+    src: url('geometry-webfont.woff') format('woff2'),
+         url('geometry-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body   {
+    background-color: #F8DE7E;
+
+} 
+
+
+h1 {
+    font-family: 'geometry';
+    color: #FF8C00;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 76pt;
+    letter-spacing: 5pt;
+    z-index: 4;
+}
+
+
+h2{
+    font-family: 'geometry';
+    color: #CC5500;
+    font-size: 30pt;
+    letter-spacing: 1pt;
+
+}
+
+div {
+    font-family: arial;
+    text-align: justify;
+    font-size: 18pt;
+    letter-spacing: 1pt;
+    width: 500px;
+    z-index: 3;
+    
+}
+
+.benedict  {
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    z-index: 3;
+}
+
+.tea{
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    z-index: 3;
+}
+
+.tofu{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    z-index: 3;
+}
+
+.quiche{
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    z-index: 3;
+}
+
+.fried{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    z-index: 3;
+}
+
+.benedict_image{
+    border-radius: 100%;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    margin-left: 460px;
+    margin-top: 460px;
+
+}
+
+.tea_image{
+    border-radius: 100%;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    margin-left: -15%;
+    margin-top: 1800px;
+    
+}
+
+.tofu_image{
+    border-radius: 100%;
+    z-index: 2;
+    width: 25%;
+    position: absolute;
+    margin-left: -66%;
+    margin-top: 1700px;
+    
+}
+
+.quiche_image{
+    border-radius: 100%;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    margin-left: -15%;
+    margin-top: 1750px;
+    
+}
+
+.fried_image{
+    border-radius: 100%;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    margin-left: -64%;
+    margin-top: 1800px;
+    
+}
+
+
+.benedict_back{
+    width: 60%;
+    z-index: 1;
+    margin-left: 5%;
+    margin-bottom: 200px;
+}
+
+.tea_back{
+    width: 60%;
+    z-index: 1;
+    margin-left: 30%;
+    margin-bottom: 200px;
+}
+
+.tofu_back{
+    width: 60%;
+    z-index: 1;
+    margin-left: 5%;
+    margin-bottom: 200px;
+}
+
+.quiche_back{
+    width: 60%;
+    z-index: 1;
+    margin-left: 30%;
+    margin-bottom: 200px;
+}
+
+.fried_back{
+    width: 60%;
+    z-index: 1;
+    margin-left: 5%;
+    margin-bottom: 200px;
+}
