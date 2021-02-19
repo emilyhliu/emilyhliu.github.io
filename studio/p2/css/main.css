@@ -1,0 +1,85 @@
+body {
+    font-family: "wordan";
+    color: #333333;
+    background-color: black;
+    font-size: 120pt;
+    margin: 35pt;
+    line-height: 120pt;
+    z-index: 5;
+    position: absolute;
+    text-shadow: 30px 30px #101010;
+}
+
+a{
+    text-decoration: inherit;
+    color:inherit;
+}
+
+a:hover{
+    color:black;
+    text-shadow: none;
+}
+
+.title{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    margin-left: 700pt;
+    margin-top: -10pt;
+    width: 70%;
+    
+}
+
+.title2{
+    display: none;
+}
+
+h2{
+    font-family: "wordan";
+    color: #181818;
+    font-size: 30pt;
+    letter-spacing: 2px;
+    line-height: 50pt;
+    margin-left: 150pt;
+    margin-bottom: 100pt;
+    z-index: -1;
+    display: absolute;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-family: "wordan";
+        color: #D3D3D3;
+        background-color: #FFFFFF;
+        margin-top: 75pt;
+        margin-bottom: 0pt;
+        line-height: 120pt;
+        text-align: right;
+        z-index: 5;
+        text-shadow: 30px 30px #f2f2f2;
+    }
+    .title{
+        display: none;   
+    }
+
+    .title2{
+        position: absolute;
+        z-index: 1;
+        display: block;
+        margin-left: -20pt;
+        margin-top: -30pt;
+        width: 25%;
+    }
+
+    a{
+        text-decoration: inherit;
+        color:inherit;
+    }
+    
+    a:hover{
+        color:white;
+        text-shadow: none;
+    }
+        
+
+}

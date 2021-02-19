@@ -1,0 +1,17 @@
+
+body {
+    font-family: "black";
+    color:  #333333;
+    background-color: black;
+    margin: 35pt;
+    font-size: 20pt;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-family: "black";
+        color: #D3D3D3;
+        background-color: #FFFFFF;
+        margin: 20pt;
+    }
+  }
