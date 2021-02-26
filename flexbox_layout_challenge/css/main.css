@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row{
+    display:flex;
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: blue;
+    flex: 1 1 0;
+    margin: 0 10px 10px 0;
+    color: #FFFFFF;
+    font-size: 80px;
+}
+
+.large{
+    flex: 2 1 0;
+}

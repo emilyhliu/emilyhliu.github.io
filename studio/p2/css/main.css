@@ -46,7 +46,7 @@ h2{
     display: absolute;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     body {
         font-family: "wordan";
         color: #D3D3D3;

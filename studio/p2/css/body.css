@@ -1,17 +1,37 @@
 
-body {
+body{
     font-family: "black";
     color:  #333333;
     background-color: black;
-    margin: 35pt;
+    margin: 100px 200px 50px 200px;
     font-size: 20pt;
 }
 
-@media screen and (max-width: 600px) {
+.b1{
+    filter: blur(1px);
+}
+
+
+
+
+@media screen and (max-width: 500px) {
     body {
         font-family: "black";
         color: #D3D3D3;
         background-color: #FFFFFF;
         margin: 20pt;
+    }
+
+    p {
+        visibility: visible;
+        z-index: 2;
+        margin-bottom: 300pt;
+
+    }
+
+    .b1 {
+        visibility: hidden;
+        z-index: 1;
+
     }
   }
