@@ -1,0 +1,111 @@
+
+body {
+    background: linear-gradient(241deg, #ffb1b1, #ffd9b1, #b1ffe9, #b1deff, #bbb1ff, #e5b1ff);
+    background-size: 1200% 1200%;
+    -webkit-animation: AnimationName 59s ease infinite;
+    -moz-animation: AnimationName 59s ease infinite;
+    -o-animation: AnimationName 59s ease infinite;
+    animation: AnimationName 59s ease infinite;
+    margin: 60px;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+
+
+
+.container {
+  overflow-y: auto;
+  scroll-snap-type:mandatory;
+}
+
+.gradient {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+h1{
+    font-family: "above";
+    font-size: 140px;
+    color: rgba(255, 255, 255, 0.568);
+    text-align: center;
+    margin: 200px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: "anti";
+}
+
+#content {
+	flex: 1;
+	height: 100%;
+}
+
+
+.row {
+	display: flex;	
+	
+}
+
+.row > *{
+	flex: 1;
+}
+
+.block {
+	height: 300px;
+	margin: 0 10px 10px 0;
+    color: #3838389d;
+	font-size: 22px;
+	line-height: 60px;
+	text-align: left;
+}
+
+.block.tiny {
+    flex: none;
+    width: 320px;
+    border: solid rgba(0, 0, 0, 0.363);
+}
+
+a{
+    color: #3838389d;
+    line-height: 100px;
+    text-decoration: inherit;
+    font-size: 60px;
+}
+
+a:visited{
+    color: #3838389d;
+    line-height: 100px;
+    text-decoration: inherit;
+    font-size: 60px;
+}
+
+a:hover{
+    color: rgba(255, 255, 255, 0.644);
+    line-height: 100px;
+    text-decoration: inherit;
+    font-size: 60px;
+}
+
+

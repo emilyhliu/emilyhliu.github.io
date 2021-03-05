@@ -3,13 +3,75 @@ body{
     font-family: "black";
     color:  #333333;
     background-color: black;
-    margin: 100px 200px 50px 200px;
-    font-size: 20pt;
+    margin: 0px;
+    font-size: 24.5pt;
+    text-align: justify;
+    line-height: 120px;
 }
 
-.b1{
-    filter: blur(1px);
+.floor{
+    transform: rotate3d(2, -1, -1, -0.2turn) translateX(200px) translateY(150px);
+    color: black;
+    position: absolute;
+    z-index: 1;
+   
 }
+
+.door{
+    transform:  none;
+    position: fixed;
+    text-align: right;
+    top: 8px;
+    right: 16px;
+    margin: 20px;
+    z-index: 2;
+    font-size: 28pt;
+    letter-spacing: 20px;
+    line-height: 80px;
+    color: inherit;
+    text-decoration: inherit;
+   
+}
+
+a{
+color: inherit;
+text-decoration: inherit;
+}
+
+
+
+.wall{
+    transform:  rotateX(40deg) rotateY(-47deg) rotateZ(90deg) translateX(10px) translateY(-240px) translateZ(900px);
+    position: absolute;
+    z-index: 2;
+}
+
+.alcove{
+    transform:  rotateX(-5deg) rotateY(-68deg) rotateZ(0deg) translateX(800px) translateY(-700px) translateZ(100px);
+    position: absolute;
+    z-index: 2;
+}
+
+.painting{
+    transform:  rotateX(-5deg) rotateY(-68deg) rotateZ(0deg) translateX(-400px) translateY(-700px) translateZ(100px);
+    position: absolute;
+    z-index: 2;
+}
+
+.light{
+    color: rgba(224, 200, 121, 0.473);
+    animation: color-change 8s infinite;
+}
+
+
+
+
+.hole{
+    color: inherit;
+}
+
+
+
 
 
 
@@ -17,21 +79,67 @@ body{
 @media screen and (max-width: 500px) {
     body {
         font-family: "black";
-        color: #D3D3D3;
+        color: #000000;
+        font-size: 24px;
         background-color: #FFFFFF;
         margin: 20pt;
+        transform: none;
     }
 
-    p {
-        visibility: visible;
-        z-index: 2;
-        margin-bottom: 300pt;
-
-    }
-
-    .b1 {
-        visibility: hidden;
+    .floor{
+        transform: none;
+        color:rgba(224, 200, 121, 0.473);
+        position: absolute;
         z-index: 1;
-
+       
     }
+    
+    .wall{
+        visibility: hidden;
+    }
+    
+    .light{
+        color: rgba(0, 0, 0, 0.180);
+        text-shadow: 60px 30px #00000015;
+        animation: none;
+    }
+
+    
+    .door{
+        position: fixed;
+        text-align: left;
+        top: 8px;
+        left: 16px;
+        margin: 20px;
+        z-index: 2;
+        font-size: 14pt;
+        color: rgba(0, 0, 0, 0.411);
+        letter-spacing: 5px;
+        line-height: 80px;
+        color: inherit;
+        text-decoration: inherit;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        position:absolute;
+      }
+
+    .door:hover{
+        transform: translate(-3em,0);
+        -webkit-transform: translate(-3em,0);
+        -moz-transform: translate(-3em,0);
+        -o-transform: translate(-3em,0);
+        -ms-transform: translate(-3em,0);
+      }
+    
+       
+    
+    a{
+        color: rgba(0, 0, 0, 0.411);
+        text-decoration: inherit;
+        }
+    
+    
   }
