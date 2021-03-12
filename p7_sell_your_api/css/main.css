@@ -1,0 +1,27 @@
+body {
+    background-image: url(../image/cloud_background.jpg);
+    background-repeat: none;
+    font-family: "comfortaa";
+    margin: 100px 60px 100px 60px;
+    color: black;
+    font-size: 18pt;
+    text-align: center;
+    padding: 30px;
+    line-height: 50px;
+}
+
+h1 {
+    font-family: "alba";
+    font-size: 46pt;
+}
+
+a {
+    font-family: "comfortaa";
+    font-size: 30pt;
+    text-decoration: underline;
+    color: rgba(196, 61, 61, 0.692);
+}
+
+.airtable {
+    margin: 32px;
+}
