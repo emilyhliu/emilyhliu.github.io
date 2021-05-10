@@ -1,0 +1,55 @@
+body{
+    font-size: 60px;
+    background-color: rgba(112, 174, 255, 0.883);
+    color: aliceblue;
+    text-align: center;
+}
+
+.organism-container{
+    position: relative;
+    left: 820px;
+    margin: 50px;
+    padding: 30px;
+    height: 1300px;
+    border-radius: 4%;
+    width: 800px;
+    border: 0.7px solid white;
+    opacity: 50%;
+}
+ 
+.organism-container:hover{
+    opacity:100%;
+    transition: 1s;
+    background-color:rgba(153, 197, 255, 0.945);
+}
+
+
+.organism-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(41, 98, 255, 0.945);
+    opacity: 100%;
+    z-index: 5;
+
+}
+
+.organism-description{
+    font-size: 40px;
+    text-align: justify;
+}
+
+.organism-image{
+    width: 500px;
+    border-radius: 2%;
+}
+
+h2{
+    font-size: 150px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(11, 13, 98, 0.945);
+}
+
+h3{
+    font-size: 80px;
+    text-align: center;
+}

@@ -1,0 +1,9 @@
+body {
+    background-color: red;
+  }
+  
+  @media (min-width: 800px) {
+    body {
+      background-color: green;
+    }
+  }

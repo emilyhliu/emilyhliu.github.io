@@ -14,7 +14,7 @@ var base = new Airtable({ apiKey: "key2kEC3HSQ7lE8EV" }).base(
 base("animal").select({}).eachPage(gotPageOfSpecies, gotAllSpecies);
 
 // an empty array to hold our book data
-const species = [];
+var species = [];
 
 // callback function that receives our data
 function gotPageOfSpecies(records, fetchNextPage) {
@@ -28,11 +28,11 @@ function gotPageOfSpecies(records, fetchNextPage) {
 // call back function that is called when all pages are loaded
 function gotAllSpecies(err) {
   console.log("gotAllSpecies()");
-  try {
-    showTypes();
-  } catch (error) {
-    error.log(error);
-  }
+  // try {
+  //   showTypes();
+  // } catch (error) {
+  //   error.log(error);
+  // }
 
   // report an error, you'd want to do something better than this in production
   if (err) {
@@ -49,8 +49,8 @@ function gotAllSpecies(err) {
 // just loop through the books and console.log them
 function consoleLogSpecies() {
   console.log("consoleLogSpecies()");
-  Species.forEach((organism) => {
-    console.log("organism:", organism);
+  species.forEach((organism) => {
+    console.log("Organism:", organism);
   });
 }
 
@@ -59,9 +59,26 @@ function showSpecies() {
     console.log("showSpecies()");
     species.forEach((organism) => {
         
+      var organismContainer = document.createElement("div");
+      organismContainer.classList.add("organism-container");
+      document.querySelector(".container").append(organismContainer);
+
         var organismTitle = document.createElement("h1");
-        organismTitle.innerText = organism.field.title;
-        document.body.append(organismTitle);
+        organismTitle.classList.add("organism-title");
+        organismTitle.innerText = organism.fields.title;
+        organismContainer.append(organismTitle);
+
+        var organismDescription = document.createElement("p");
+        organismDescription.classList.add("organism-description");
+        organismDescription.innerText = organism.fields.description;
+        organismContainer.append(organismDescription);
+
+        var organismImage = document.createElement("img");
+        organismImage.classList.add("organism-image");
+        organismImage.src = organism.fields.image[0].url;
+        organismContainer.append(organismImage);
+
+
     });
   }
 

@@ -1,38 +1,60 @@
+
+let inputElement = document.querySelector("#input");
+
 let result = document.querySelector("#result");
 
-document.addEventListener("keydown", function(event)
-{
-  console.log(event);
-  console.log("what did we just press:");
-  console.log(event.key);  
-  if (event.key == "a"){
-    document.body.classList.toggle("letter_a");
-  }
-  if (event.key == "s"){
-    document.body.classList.toggle("letter_s");
-  }
-  if (event.key == "d"){
-    document.body.classList.toggle("letter_d");
-  }
-  if (event.key == "f"){
-    document.body.classList.toggle("letter_f");
-  }
-  if (event.key == "g"){
-    document.body.classList.toggle("letter_g");
-  }
-  if (event.key == "h"){
-    document.body.classList.toggle("letter_h");
-  }
-  if (event.key == "j"){
-    document.body.classList.toggle("letter_j");
-  }
-  if (event.key == "k"){
-    document.body.classList.toggle("letter_k");
-  }
-  if (event.key == "l"){
-    document.body.classList.toggle("letter_l");
-  }
+// Detect when we press a key while in the text box
+inputElement.addEventListener("keydown",function(event){
 
-  result.innerText = event.key;
+  // Detect when we specifically press enter key
+  if (event.key == "Enter"){
+    
+    // Get the contents of the text input (aka name)
+    let name = inputElement.value;
+    console.log(name);
+
+    //We can also clear what we wrote in the text box
+    inputElement.value = "";
+    
+    //Clear the reading result from last time
+    result.innerHTML = "";
+    
+    // Loop through 4 times
+    for (let i = 0; i < 4; i++){
+      
+      // Print the number we're at in the loop
+      console.log(i);
+      
+      // Get the i-th letter in the name
+      let letter = name[i];
+      console.log(letter);
+      
+      // Create a new HTML image element for the card
+      let selectedDecoration = document.createElement("img");
+      
+      // If letter is any of these, use the devil card
+      if (["a", "b", "c", "d", "e", "f"].includes(letter)){
+        selectedDecoration.src = "image/1.jpg";
+      }
+      
+      // If letter is any of these, use the magician card
+      if (["g", "h", "i", "j", "k", "l"].includes(letter) ){
+        selectedDecoration.src = "image/1.jpg";
+      }
+      
+      // If letter is any of these, use the star card
+      if (["m", "n", "o", "p", "q", "r"].includes(letter)){
+        selectedDecoration.src = "image/1.jpg";
+      }
+      
+      // If letter is any of these, use the moon card
+      if (["s", "t", "u", "v", "w", "x", "y", "z"].includes(letter)){
+        selectedDecoration.src = "image/1.jpg";
+      }
+      
+      result.appendChild(selectedDecoration);
+      
+    }
+    
+  }
 })
-
